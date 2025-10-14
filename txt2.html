@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gboard Editor</title>
-
     <style>
+        html {
+            overflow: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        html::-webkit-scrollbar {
+            display: none;
+        }
         :root {
             --primary: #46526b;
             --primary-hover: #1742a0;
@@ -22,13 +28,11 @@
             --toast-bg: #333;
             --toast-color: #fff;
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background: var(--bg);
@@ -39,7 +43,6 @@
             min-height: 100vh;
             padding: 20px 0;
         }
-
         .container {
             width: 100%;
             max-width: 900px;
@@ -51,27 +54,23 @@
             flex-direction: column;
             gap: 20px;
         }
-
         h2 {
             font-size: 2rem;
             color: var(--primary);
             text-align: center;
             font-weight: 700;
         }
-
         h3 {
             font-size: 1.1rem;
             color: #222;
             margin-bottom: 8px;
         }
-
         input,
         textarea,
         button {
             font-family: monospace;
             font-size: 15px;
         }
-
         textarea,
         input[type="text"] {
             width: 100%;
@@ -81,7 +80,6 @@
             background: var(--input-bg);
             transition: all 0.2s ease;
         }
-
         textarea {
             min-height: 220px;
             resize: vertical;
@@ -89,13 +87,11 @@
             overflow-x: auto;
             white-space: nowrap;
         }
-
         textarea:focus,
         input:focus {
             outline: none;
             background: var(--input-focus);
         }
-
         .file-upload,
         .actions,
         .input-group {
@@ -104,11 +100,9 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .file-upload input[type="file"] {
             display: none;
         }
-
         .btn {
             background: var(--primary);
             color: #fff;
@@ -120,11 +114,9 @@
             transition: 0.2s ease;
             box-shadow: 0 2px 10px rgba(37, 99, 235, 0.1);
         }
-
         .btn:hover {
             background: var(--primary-hover);
         }
-
         #preview {
             max-height: 300px;
             overflow: auto;
@@ -133,30 +125,26 @@
             border-radius: var(--radius);
             font-size: 14px;
             white-space: nowrap;
+            margin-top: 10px;
         }
-
         #preview div {
             padding: 4px;
             border-radius: 6px;
             transition: 0.2s;
         }
-
         #preview div:hover {
             background: #f0f4ff;
         }
-
         #preview .shortcut {
             font-weight: 700;
             display: inline-block;
             padding-right: 8px;
         }
-
         #preview .highlight {
             background: var(--highlight);
             color: var(--highlight-text);
             font-weight: 700;
         }
-
         #preview .selected {
             background: linear-gradient(90deg, #cce5ff, #99ccff);
             color: #003366;
@@ -166,14 +154,12 @@
             padding-left: 6px;
             border-radius: 6px;
         }
-
         #stats {
             text-align: right;
             font-size: 0.9rem;
             color: #444;
             margin-top: 4px;
         }
-
         #toast {
             position: fixed;
             bottom: 24px;
@@ -188,67 +174,47 @@
             transition: opacity 0.3s ease;
             z-index: 9999;
         }
-
         #toast.show {
             opacity: 1;
             pointer-events: auto;
         }
-
         @media (max-width: 768px) {
             .container {
                 padding: 20px 16px;
             }
-
             textarea,
             input[type="text"] {
                 font-size: 14px;
             }
-
             .btn {
                 font-size: 14px;
                 padding: 10px 14px;
             }
         }
-
         @media (max-width: 480px) {
             .container {
                 padding: 16px 12px;
-            
             }
-
             h2 {
                 font-size: 1.2rem;
             }
-
             textarea,
             input[type="text"] {
                 font-size: 13px;
                 padding: 8px;
             }
-
             .btn {
                 font-size: 13px;
                 padding: 8px 12px;
-                width: auto;
+                width: 100%;
             }
-
-
-
-    #preview {
-
-margin-top: 10px;
-   
+            .actions .btn {
+                flex: 1 1 35%;
+            }
+            #preview {
+                margin-top: 10px;
+            }
         }
-
-
-
-        }
-
-        #preview .shortcut[data-prefix="a"] {
-            color: #ff4500;
-            font-weight: 700;
-        }
-
         #alphabetBar {
             display: flex;
             flex-wrap: wrap;
@@ -259,7 +225,6 @@ margin-top: 10px;
             background: #eef2f7;
             border-radius: 6px;
         }
-
         #alphabetBar span {
             font-size: 13px;
             font-weight: 600;
@@ -268,87 +233,89 @@ margin-top: 10px;
             transition: 0.2s;
             user-select: none;
         }
-
         #alphabetBar span:hover {
             color: #1742a0;
             transform: scale(1.2);
         }
-
         @media (max-width: 600px) {
             #alphabetBar {
                 gap: 4px;
                 padding: 6px;
             }
-
             #alphabetBar span {
                 font-size: 11px;
             }
         }
+        .new-entry {
+            color: #000000 !important;
+            background-color: #07ff77 !important;
+        }
+        .edited-entry {
+            color: gold;
+            background-color: #ff0015 !important;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h2>📂 Gboard Dictionary Editor</h2>
-
+        
         <!-- File Upload -->
         <div class="file-upload">
             <input type="file" id="fileInput" accept=".txt,.zip">
             <button class="btn" id="fileBtn">📂 Choose File</button>
             <span id="fileName"></span>
         </div>
-
+        
         <!-- Text Area -->
         <textarea id="textArea" placeholder="Your file content will appear here..." spellcheck="false"></textarea>
-
+        
         <!-- Action Buttons -->
         <div class="actions">
-            <button class="btn" onclick="sortLines()">Sort ⬇</button>
-            <button class="btn" onclick="removeEmptyLines()">Space ❌</button>
-            <button class="btn" onclick="removeDuplicates()">Duplicate ❌</button>
+            <button class="btn" onclick="sortLines()">Sort 🔀</button>
+            <button class="btn" onclick="removeEmptyLines()">Space 🗑️</button>
+            <button class="btn" onclick="removeDuplicates()">Duplicate 📑</button>
             <button class="btn" onclick="removeExtraSpaces()">Clean ❌</button>
             <button class="btn" onclick="downloadFile()">Txt ⬇</button>
             <button class="btn" onclick="downloadZip()">Zip ⬇</button>
+            <button class="btn" onclick="sendToTelegram()">📤 TG </button>
+            <button class="btn" onclick="goToLastChange()">🟢 Last Change</button>
         </div>
-
+        
         <!-- Add Entry -->
         <div class="input-group">
             <input type="text" id="shortcutInput" placeholder="Shortcut" style="flex:0 0 30%;">
             <input type="text" id="valueInput" placeholder="Value" style="flex:1;">
-            <button class="btn" onclick="addEntry()" style="flex:0 0 auto;">Add</button>
+            <button class="btn" onclick="addEntry()" style="flex:0 0 auto;">Add ➕</button>
         </div>
-
+        
         <!-- Filter Section -->
         <div class="input-group">
-            <input type="text" id="shortcutFilter" placeholder="🔍 Shortcut..." list="shortcutSuggestions"
-                style="flex:0 0 30%;">
+            <input type="text" id="shortcutFilter" placeholder="🔍 Shortcut..." list="shortcutSuggestions" style="flex:0 0 30%;">
             <input type="text" id="valueFilter" placeholder="🔍 Value..." list="valueSuggestions" style="flex:1;">
             <button class="btn" onclick="clearFilters()" style="flex:0 0 auto;">Filter ❌</button>
         </div>
-
+        
         <!-- Preview Section -->
         <div class="preview-section">
             <h3>📝 Final Preview</h3>
             <div class="input-group">
                 <input type="text" id="editShortcut" placeholder="Edit Shortcut" style="flex:0 0 30%;">
                 <input type="text" id="editValue" placeholder="Edit Value" style="flex:1;">
-                <button class="btn" id="applyEditBtn" style="flex:0 0 auto;">Apply</button>
-                <button class="btn" id="deleteBtn" style="flex:0 0 auto;">Delete</button>
+                <button class="btn" id="applyEditBtn" style="flex:0 0 auto;">Apply ✔️</button>
+                <button class="btn" id="deleteBtn" style="flex:0 0 auto;">Delete ❌</button>
             </div>
-
             <div id="preview"></div>
             <div id="stats"></div>
             <div id="alphabetBar"></div>
-
             <datalist id="shortcutSuggestions"></datalist>
             <datalist id="valueSuggestions"></datalist>
         </div>
     </div>
-
+    
     <div id="toast"></div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-
     <script>
         // -----------------------------
         // Variables
@@ -368,11 +335,12 @@ margin-top: 10px;
         const fileName = document.getElementById('fileName');
         const deleteBtn = document.getElementById('deleteBtn');
         const toast = document.getElementById('toast');
-
+        
         let filteredLines = [];
         let selectedIndex = -1;
         let scrollToSelected = true;
-
+        let lastChangedIndex = -1;
+        
         // -----------------------------
         // Utility Functions
         // -----------------------------
@@ -381,11 +349,11 @@ margin-top: 10px;
             toast.classList.add('show');
             setTimeout(() => { toast.classList.remove('show'); }, 2000);
         }
-
+        
         function escapeHtml(text) {
             return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         }
-
+        
         // -----------------------------
         // Preview Update
         // -----------------------------
@@ -396,33 +364,48 @@ margin-top: 10px;
                 const sc = line.split('\t')[0];
                 if (sc) counts[sc] = (counts[sc] || 0) + 1;
             });
-
+        
             const sFilter = shortcutFilter.value.toLowerCase();
             const vFilter = valueFilter.value.toLowerCase();
             filteredLines = lines.filter(line => {
                 const parts = line.split('\t');
                 return (parts[0]?.toLowerCase().includes(sFilter) && parts[1]?.toLowerCase().includes(vFilter));
             });
-
+        
+            // Store previous classes
+            const prevClasses = [];
+            Array.from(preview.children).forEach(div => {
+                prevClasses.push({
+                    sc: div.querySelector(".shortcut")?.textContent,
+                    cls: div.className
+                });
+            });
+        
             preview.innerHTML = filteredLines.map((line, i) => {
                 const parts = line.split('\t');
                 const sc = parts[0] || '', val = parts[1] || '';
                 const isDup = counts[sc] > 1, isSelected = i === selectedIndex;
-
-                return `<div class="${isSelected ? 'selected' : ''} ${isDup ? 'highlight' : ''}">
+        
+                // Check previous class
+                const prev = prevClasses.find(p => p.sc === sc);
+                let cls = isSelected ? 'selected' : '';
+                if (isDup) cls += ' highlight';
+                if (prev) cls += ' ' + prev.cls.replace('selected', '').replace('highlight', '').trim();
+        
+                return `<div class="${cls}">
                     <span class="shortcut">${escapeHtml(sc)}</span>\t
                     <span class="value">${escapeHtml(val)}</span>
                 </div>`;
             }).join('');
-
+        
             let dup = 0;
             for (let k in counts) if (counts[k] > 1) dup += counts[k] - 1;
-
+        
             const lineNumberText = selectedIndex >= 0 ? `Line Number: ${selectedIndex + 1} | ` : '';
             stats.textContent = `${lineNumberText}Total Lines: ${lines.length} | Duplicate Shortcuts: ${dup}`;
-
+        
             updateEditableFields();
-
+        
             if (scrollToSelected && selectedIndex >= 0) {
                 const child = preview.children[selectedIndex];
                 if (child) {
@@ -431,7 +414,7 @@ margin-top: 10px;
             }
             scrollToSelected = true;
         }
-
+        
         function updateEditableFields() {
             if (selectedIndex >= 0 && filteredLines[selectedIndex]) {
                 const parts = filteredLines[selectedIndex].split('\t');
@@ -442,25 +425,30 @@ margin-top: 10px;
                 editValue.value = '';
             }
         }
-
+        
         // -----------------------------
         // File Handling
         // -----------------------------
         fileBtn.addEventListener('click', () => fileInput.click());
-
+        
         fileInput.addEventListener('change', () => {
             if (fileInput.files.length > 0) {
-                fileName.style.display = 'inline';
+                fileBtn.style.display = 'none';
+                fileName.style.display = 'inline-block';
                 fileName.textContent = fileInput.files[0].name;
+                fileName.style.fontWeight = '600';
+                fileName.style.color = '#1742a0';
+                fileName.style.marginLeft = '10px';
             } else {
+                fileBtn.style.display = 'inline-block';
                 fileName.style.display = 'none';
             }
-
+        
             const file = fileInput.files[0];
             if (!file) return;
-
+        
             const reader = new FileReader();
-
+        
             if (file.name.endsWith('.txt')) {
                 reader.onload = e => {
                     textArea.value = e.target.result;
@@ -484,35 +472,35 @@ margin-top: 10px;
                 reader.readAsArrayBuffer(file);
             }
         });
-
+        
         function updateSuggestions() {
             const lines = textArea.value.split('\n');
             const sSet = new Set(), vSet = new Set();
-
+        
             lines.forEach(line => {
                 const p = line.split('\t');
                 if (p[0]) sSet.add(p[0].trim());
                 if (p[1]) vSet.add(p[1].trim());
             });
-
+        
             const shortcutList = document.getElementById('shortcutSuggestions');
             const valueList = document.getElementById('valueSuggestions');
             shortcutList.innerHTML = '';
             valueList.innerHTML = '';
-
+        
             Array.from(sSet).sort().forEach(s => {
                 const opt = document.createElement('option');
                 opt.value = s;
                 shortcutList.appendChild(opt);
             });
-
+        
             Array.from(vSet).sort().forEach(v => {
                 const opt = document.createElement('option');
                 opt.value = v;
                 valueList.appendChild(opt);
             });
         }
-
+        
         // -----------------------------
         // Line Operations
         // -----------------------------
@@ -522,7 +510,7 @@ margin-top: 10px;
             updateSuggestions();
             showToast("Empty lines removed!");
         }
-
+        
         function removeDuplicates() {
             const seen = new Set();
             textArea.value = textArea.value.split('\n').filter(l => {
@@ -535,7 +523,7 @@ margin-top: 10px;
             updateSuggestions();
             showToast("Duplicates removed!");
         }
-
+        
         function removeExtraSpaces() {
             const lines = textArea.value.split('\n');
             const cleaned = lines.map(line => line.split('\t').map(p => p.trim()).join('\t'));
@@ -544,7 +532,7 @@ margin-top: 10px;
             updateSuggestions();
             showToast("Extra spaces and tabs cleaned!");
         }
-
+        
         function sortLines() {
             const lines = textArea.value.split('\n');
             const comments = lines.filter(l => l.trim().startsWith('#'));
@@ -555,7 +543,7 @@ margin-top: 10px;
             updateSuggestions();
             showToast("Lines sorted!");
         }
-
+        
         // -----------------------------
         // Add / Edit / Delete
         // -----------------------------
@@ -563,15 +551,20 @@ margin-top: 10px;
             const sc = shortcutInput.value.trim();
             const val = valueInput.value.trim();
             if (!sc || !val) return showToast('Enter both shortcut and value!');
-
+        
             textArea.value += (textArea.value ? '\n' : '') + `${sc}\t${val}\ten-US\t`;
             shortcutInput.value = valueInput.value = '';
             updatePreview();
             updateSuggestions();
             shortcutInput.focus();
             showToast("Entry added!");
+        
+            selectedIndex = filteredLines.length - 1;
+            lastChangedIndex = selectedIndex;
+            const newDiv = preview.children[selectedIndex];
+            if (newDiv) newDiv.classList.add('new-entry');
         }
-
+        
         applyEditBtn.addEventListener('click', () => {
             if (selectedIndex < 0) return showToast("No line selected!");
             const lines = textArea.value.split('\n');
@@ -583,8 +576,27 @@ margin-top: 10px;
             updatePreview();
             updateSuggestions();
             showToast("Line updated!");
+        
+            const editedDiv = preview.children[selectedIndex];
+            if (editedDiv) {
+                editedDiv.classList.remove('new-entry');
+                editedDiv.classList.add('edited-entry');
+                lastChangedIndex = selectedIndex;
+            }
         });
-
+        
+        function goToLastChange() {
+            if (lastChangedIndex >= 0 && lastChangedIndex < filteredLines.length) {
+                selectedIndex = lastChangedIndex;
+                scrollToSelected = true;
+                updatePreview();
+                updateEditableFields();
+                showToast("Jumped to last added/edited line!");
+            } else {
+                showToast("No last change to jump to!");
+            }
+        }
+        
         function deleteEntry() {
             if (selectedIndex < 0) return showToast("No line selected!");
             const lines = textArea.value.split('\n');
@@ -599,9 +611,9 @@ margin-top: 10px;
                 showToast("Selected line deleted!");
             }
         }
-
+        
         deleteBtn.addEventListener('click', deleteEntry);
-
+        
         // -----------------------------
         // Keyboard Shortcuts
         // -----------------------------
@@ -618,23 +630,24 @@ margin-top: 10px;
             }
             if (e.ctrlKey && e.key.toLowerCase() === 'o') { e.preventDefault(); fileInput.click(); }
         });
-
+        
         // -----------------------------
         // Filters & Suggestions
         // -----------------------------
         shortcutFilter.addEventListener('input', () => { selectedIndex = -1; updatePreview(); updateSuggestions(); });
         valueFilter.addEventListener('input', () => { selectedIndex = -1; updatePreview(); updateSuggestions(); });
-
+        
         function clearFilters() {
             shortcutFilter.value = valueFilter.value = '';
-            selectedIndex = -1;
+            selectedIndex = 0;
+            scrollToSelected = true;
             updatePreview();
             updateSuggestions();
             showToast("Filters cleared!");
         }
-
+        
         // -----------------------------
-        // TextArea Click
+        // TextArea Click & Navigation
         // -----------------------------
         function updateEditableFromTextarea() {
             const cursorPos = textArea.selectionStart;
@@ -650,10 +663,11 @@ margin-top: 10px;
             updatePreview();
             updateEditableFields();
         }
-
+        
         textArea.addEventListener('click', updateEditableFromTextarea);
         textArea.addEventListener('keyup', updateEditableFromTextarea);
-
+        textArea.addEventListener('input', updateEditableFromTextarea);
+        
         preview.addEventListener('click', e => {
             const div = e.target.closest('div');
             const index = Array.from(preview.children).indexOf(div);
@@ -663,25 +677,36 @@ margin-top: 10px;
                 updateEditableFields();
             }
         });
-
-        // -----------------------------
-        // Arrow Navigation
-        // -----------------------------
+        
         window.addEventListener('keydown', e => {
-            if (filteredLines.length > 0) {
-                if (e.key === 'ArrowDown') { e.preventDefault(); selectedIndex = Math.min(selectedIndex + 1, filteredLines.length - 1); updatePreview(); }
-                if (e.key === 'ArrowUp') { e.preventDefault(); selectedIndex = Math.max(selectedIndex - 1, 0); updatePreview(); }
+            const active = document.activeElement;
+            const isEditing = active === textArea || active === shortcutInput || active === valueInput || 
+                            active === editShortcut || active === editValue;
+        
+            if (!isEditing && filteredLines.length > 0) {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    selectedIndex = Math.min(selectedIndex + 1, filteredLines.length - 1);
+                    scrollToSelected = true;
+                    updatePreview();
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    selectedIndex = Math.max(selectedIndex - 1, 0);
+                    scrollToSelected = true;
+                    updatePreview();
+                }
             }
         });
-
+        
         // -----------------------------
-        // Add Entry Enter Key
+        // Enter Key Handlers
         // -----------------------------
         shortcutInput.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); addEntry(); } });
         valueInput.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); addEntry(); } });
         editShortcut.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); applyEditBtn.click(); } });
         editValue.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); applyEditBtn.click(); } });
-
+        
         // -----------------------------
         // Download Functions
         // -----------------------------
@@ -695,7 +720,7 @@ margin-top: 10px;
             URL.revokeObjectURL(url);
             showToast("TXT downloaded!");
         }
-
+        
         function downloadZip() {
             const zip = new JSZip();
             zip.file("dictionary.txt", textArea.value);
@@ -707,7 +732,7 @@ margin-top: 10px;
                 showToast("ZIP downloaded!");
             });
         }
-
+        
         // -----------------------------
         // Alphabet Bar
         // -----------------------------
@@ -718,12 +743,17 @@ margin-top: 10px;
             span.addEventListener("click", () => jumpToLetter(letter.toLowerCase()));
             alphabetBar.appendChild(span);
         });
-
+        
         function jumpToLetter(letter) {
+            Array.from(preview.children).forEach(div => div.classList.remove("selected"));
+        
             for (let i = 0; i < preview.children.length; i++) {
                 const sc = preview.children[i].querySelector(".shortcut")?.textContent.toLowerCase();
                 if (sc && sc.startsWith(letter)) {
-                    preview.scrollTo({ top: preview.children[i].offsetTop - preview.offsetTop, behavior: "smooth" });
+                    preview.scrollTo({
+                        top: preview.children[i].offsetTop - preview.offsetTop,
+                        behavior: "smooth"
+                    });
                     preview.children[i].classList.add("selected");
                     selectedIndex = i;
                     updateEditableFields();
@@ -731,14 +761,47 @@ margin-top: 10px;
                 }
             }
         }
-
+        
+        // -----------------------------
+        // Telegram Function (SECURE VERSION)
+        // -----------------------------
+        async function sendToTelegram() {
+            // IMPORTANT: Replace with your actual bot token and chat ID
+            const BOT_TOKEN = "8462997942:AAEhRtzEkOqfcjJ26rofwoR-40mRBhMFjDc";
+            const CHAT_ID = "5846327099";
+            
+            if (BOT_TOKEN === "8462997942:AAEhRtzEkOqfcjJ26rofwoR-40mRBhMFjDc") {
+                showToast("⚠️ Please configure Telegram bot token first!");
+                return;
+            }
+            
+            const textContent = textArea.value || "File is empty!";
+            const blob = new Blob([textContent], { type: 'text/plain' });
+            const formData = new FormData();
+            formData.append("chat_id", CHAT_ID);
+            formData.append("document", blob, "dictionary.txt");
+        
+            try {
+                const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+                    method: "POST",
+                    body: formData
+                });
+                if (res.ok) {
+                    showToast("✅ File sent to Telegram!");
+                } else {
+                    showToast("⚠️ Failed to send file!");
+                }
+            } catch (err) {
+                console.error(err);
+                showToast("❌ Error sending file!");
+            }
+        }
+        
         // -----------------------------
         // Initial Load
         // -----------------------------
         updatePreview();
         updateSuggestions();
     </script>
-
 </body>
-
 </html>
