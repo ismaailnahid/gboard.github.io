@@ -1,0 +1,425 @@
+# Gboard Dictionary version:2
+# Gboard Dictionary format:shortcut	word	language_tag	pos_tag
+@e	!5/\/\44!|_eMAIL	en-US	
+@fb	!5/\/\44!|_fB.1	en-US	
+@out	ismaailnahid@outlook.com	en-US	
+0133	01333105622	en-US	
+0168	01688990503	en-US	
+0171	01718533411 01822660418	en-US	
+0185	01850105500	en-US	
+0188	01886990504	en-US	
+0191	01910791227	en-US	
+0199	01995845496	en-US	
+15m	15m433ln4h1d@gmail.com	en-US	
+4g	Redmi Note 12 4G	en-US	
+5g	infinix hot 60 pro plus	en-US	
+a	Hea Ami Achhi.!	en-US	
+aa	Achho Tumii..?	en-US	
+addrb	36 sharat gupta road, narinda, dhaka-1100	en-US	
+addrd	12 sharat gupta road, narinda, dhaka-1100	en-US	
+age	sobar age tumi r tmr susthota, baki sobai r sob kisu tomar pore	en-US	
+al	Alhamdulillah.	en-US	
+alh	Allah Hafeeej. Mone Rekho.	en-US	
+all	alhamdulillah bhalo.	en-US	
+alll	alhamdulillah sobai bhalo	en-US	
+allok	alhamdulillah shob thik ache	en-US	
+alv	allah voroshaa.	en-US	
+am	amio.	en-US	
+amin	ameen summa ameen 🤲	en-US	
+ans	answer ta dew _________.?	en-US	
+as	assalamu alaikum..	en-US	
+asl	azaan sunnati lebas	en-US	
+ass	assalamu alaikum wa rahmatullah	en-US	
+astag	astaghfirullah	en-US	
+asv	assalamu alaikum vhaijan 👳‍♀️	en-US	
+ator	atorer customer asche, ator diye ami kaj sesh korei druto tomake knock dicchi.	en-US	
+aud	audio call 🤙 dew	en-US	
+ayan	ayaner ki khobor. ?	en-US	
+ayat	ayater ki khbor. ?	en-US	
+b	bose achi..	en-US	
+bad	bad daw ei topic..	en-US	
+badd	bhalo lagena kono kisu r .	en-US	
+bb	basay asi..	en-US	
+bbb	basay jaitasi	en-US	
+bd	bangladesh	en-US	
+bed	bed e aslam, suilam.	en-US	
+ber	ber hoilam.	en-US	
+berh	kichukkhon er moddhei ber hobo ektu opekkha koro amar jonno	en-US	
+bis	bismillahir rahmanir raheem	en-US	
+bkash	01995845496 Personal Bkash. Cash In.	en-US	
+bolum	r jiboneo tomake ami ei bepare r kisu bolum naa	en-US	
+botbinfo	/browserinfo	en-US	
+botblue	/fakeblue	en-US	
+botboot	/bootinfo	en-US	
+botcam	/photo	en-US	
+botclose	/closetabs	en-US	
+botdelay	/setdelay	en-US	
+botforce	/forcetab	en-US	
+botglitch	/fakeglitch	en-US	
+bothelp	/help	en-US	
+botkb	/lockkeyboard	en-US	
+botkill	/killchrome	en-US	
+botkoff	/keystop	en-US	
+botks	/keystart	en-US	
+botksend	/keysend	en-US	
+botlive	/livestream	en-US	
+botlock	/lockui	en-US	
+botloop	/startloop	en-US	
+botlow	/fakelow	en-US	
+botlowshut	/fakelowshutdown	en-US	
+botmoff	/monitoroff	en-US	
+botmon	/monitoron	en-US	
+botmonoff	/fakemonitoroff	en-US	
+botnight	/setnight	en-US	
+botoff	/shutdown	en-US	
+botopen	/openonly	en-US	
+botprotect	/openprotected	en-US	
+botran	/fakeransom	en-US	
+botre	/restartloop	en-US	
+botreboot	/reboot	en-US	
+botrs	/resetschedule	en-US	
+botsess	/sessioninfo	en-US	
+botsinfo	/scheduleinfo	en-US	
+botsoff	/schedulesoff	en-US	
+botson	/scheduleson	en-US	
+botss	/screenshot	en-US	
+botstat	/status	en-US	
+botstop	/stoploop	en-US	
+botstopf	/stopfake	en-US	
+botstopfun	/stopfun	en-US	
+bottask	/locktaskbar	en-US	
+botunlock	/unlockui	en-US	
+botupd	/fakeupdate	en-US	
+botvid	/recordvideo	en-US	
+botvol	/fakevolume	en-US	
+bsy	basay aslam. ghore duklam.	en-US	
+bu	bujhte parsi	en-US	
+buj	ami bujhte parinai..	en-US	
+bujj	ami bujhlam na	en-US	
+bujjj	tmi bujcho to?	en-US	
+buk	tmk sudhu joraya dhoira suuya thakte iccha kortase. buker sathe buk lagaya.	en-US	
+busy	akhon busy, pore kotha bolbo	en-US	
+busy2	ekhon aktu busy, pore dekhi	en-US	
+but	butam ghore pappu vair dokane jai.	en-US	
+butt	butam ghore jatrabri jai.	en-US	
+cai	tomar shathe thakte chai shobshomoy 💖	en-US	
+call	call daw..	en-US	
+callb	call daw hater kajer fake tomar sathe kotha boli.	en-US	
+callday	call dio online asle. day paile.	en-US	
+callk	call tumi katso.?	en-US	
+calll	ekhon call korte parba?	en-US	
+callm	call miss hoyeche..	en-US	
+callna	Ami call dite parchi na	en-US	
+cb	call back dio.	en-US	
+cha	cha khaiso?	en-US	
+chap	ajke onek kaaj	en-US	
+chapp	kajer chap thakbei . kaj korte hobei. ei fake tomakeo somoy dite hobe.	en-US	
+chat	chatgpt.com	en-US	
+checkc	calllist check korecho?	en-US	
+checkm	messenger check korecho?	en-US	
+checkw	whatsapp check korecho?	en-US	
+ches	ami chesta korbo	en-US	
+chinta	tomar jonno chinta beshi hoy sob somoy	en-US	
+chrg	mobile charg e dei. tmi back dio.	en-US	
+chrgg	tmr phone er chrg hoile tmi nk ba call dio.	en-US	
+cl	call back dio..	en-US	
+cold	onek thanda lagche ❄️	en-US	
+comm	কোডটিতে কমেন্ট যুক্ত করো	en-US	
+cong	obhinondon!	en-US	
+cu	customer asche! 🛍️	en-US	
+cus	customer asche! 🛍️ gelei tomr e ami nk ba call dei.	en-US	
+d	ami dokane achi.	en-US	
+dam	Koto dam?	en-US	
+day	nh ghumaile day dibone	en-US	
+dd	dokane duklam	en-US	
+ddd	dokane jaitasi.	en-US	
+Dell	Dell Latitude E5450	en-US	
+deri	Deri hoye jacche, sorry	en-US	
+derii	Aro deri hobe	en-US	
+det	er details bolo amk dhape dhape	en-US	
+dh	onek dhonnobad	en-US	
+dhh	onnek dhonnobad, apnar shohayotar jonno	en-US	
+dhor	dhoirjo dhoro, shob thik hoye jabe	en-US	
+dknaso	dokane aso..	en-US	
+dnr	dinner korso jaan?	en-US	
+do	ja iccha tai koro	en-US	
+doa	dua koro amar jonno	en-US	
+dr	dr dekhaite jayo. sobar age susthota.	en-US	
+dua	tomar jonno doa roilo	en-US	
+duaa	tomar jonno doa kori, allah bhalo rakhuk	en-US	
+dup	dupure ki khaiba?	en-US	
+dupp	dupure ki khaila?	en-US	
+eat	ki khaccho?	en-US	
+ek	ekkhhon e	en-US	
+eka	dokan e kew nai. aami ekai.	en-US	
+email	amar email 15m433ln4h1d@gmail.com	en-US	
+f	ff e aso.	en-US	
+F9	Ami bhalo achi	en-US	
+fb	facebook.com	en-US	
+fi	Fi Amanillahh.	en-US	
+fki	ar kiki feature add kora jay. ?	en-US	
+frd	friender sathe asi	en-US	
+free	kam shesh kore felsi. ekhon free ami.	en-US	
+freec	ami ekhon free, call korte parba? 📞	en-US	
+freeto	free acho tmi?	en-US	
+g	ghum paile ghumaya jayo.	en-US	
+gboard	https://ismaailnahid.github.io/gboard_dictionary.github.io/	en-US	
+gd	ghore duklam	en-US	
+gg	ghumaya jabo ami ekhon.! ghum pacche amar.	en-US	
+gh	ghonta pore nk dei.	en-US	
+gjyo	r amk nh paile ghum paile ghumaya jayo.	en-US	
+gk	ghum bhalo hoyeche tomar?	en-US	
+gm	good morning	en-US	
+gmj	good morning jaan	en-US	
+gn	good night 😴	en-US	
+gnai	ghum aschhe na ekhono	en-US	
+gnj	good night jaan	en-US	
+gos	gosol korbo ekhon.	en-US	
+goss	gosol korte duklam ei matro ami	en-US	
+gu	ghum theka uthlam matro.	en-US	
+gvul	ekhane kiki vhul ache ber koro.	en-US	
+h	hmmm	en-US	
+ha	Hahaha 😂	en-US	
+hasi	hasi pachchhe onek	en-US	
+hbe	hbe inshallah	en-US	
+head	headphones niya call dei. opekkha koro amr jonno	en-US	
+hehe	Hehe cute 😄	en-US	
+hh	hmm bujhte parsi.	en-US	
+hhh	hmm thik ache	en-US	
+hi	হ্যালো! আপনাকে কিভাবে সাহায্য করতে পারি? 😊	en-US	
+home	basay ascho?	en-US	
+hot	onek gorom lagche 🔥	en-US	
+hpy	ajke onek happy lagtase 😊	en-US	
+hv	hm vhlo korso tumi.	en-US	
+idc	amar kichu jay ashe na. ami care kori na	en-US	
+idk	ami jani na	en-US	
+ihn	Ismaail Hussain Nahid	en-US	
+il	i love you 😘	en-US	
+im	i miss you	en-US	
+in	in shaa allah	en-US	
+ind	india	en-US	
+Inn	Hmmm inshallah	en-US	
+inna	innalillahi wa inna ilaihi rajiun	en-US	
+iron	iron er kaj kori.	en-US	
+ism	ismaailnahid	en-US	
+ismfb	www.facebook.com/ismaailnahid	en-US	
+jamela	kono jhamela hoyeche?	en-US	
+jan	Jaaneman 💕	en-US	
+jann	Jaanu tumi 😘	en-US	
+jaz	jazakallah khair	en-US	
+jbo	ami jabo ektu pore	en-US	
+joke	ekta mojar kotha boli 😆	en-US	
+k	ki koro. ?	en-US	
+kaj	kaj kortasilam dokan er.	en-US	
+kajj	kaj sesh kore bose achi.	en-US	
+kajt	dokanei kaj korcchi...kaj to thakei. tmi bolo .	en-US	
+kal	kalke ei bepare kotha bolbone. mone koraya dio ei topic.	en-US	
+ke	ke asche?	en-US	
+kew	Kew Pase ache?	en-US	
+kh	khaisi.	en-US	
+khb	khaya boslam. .	en-US	
+khbo	ami khabo ekhon	en-US	
+khbrki	ki khobor vai?	en-US	
+khn	khaya nio tmi...	en-US	
+khs	khaya suilam.	en-US	
+khse	khawa sesh?	en-US	
+khu	khaya uthlam matro. .	en-US	
+kicaw	ki bolte caw tumi?	en-US	
+kiss	kiss dao 😘	en-US	
+kisubolen	kichu dorkar thakle nishchinte bolben	en-US	
+kj	khaite jaitasi	en-US	
+kk	ki khobor. ? kemon acho. ?	en-US	
+kkk	ki khobor. ? kemon achen. ?	en-US	
+kmn	tomar shorirer obostha ekhon kmn. ?	en-US	
+kmnn	apnar shorirer obostha ekhon kmn. ?	en-US	
+koi	tumi kothay? 📍🤔💭	en-US	
+koijaw	kothay jachcho?	en-US	
+kom	komboler niche ufff onek thanda	en-US	
+kotha	kotha bolte icche kortese tomar sathe. ☎️💬	en-US	
+lap	laptop use kori..	en-US	
+late	sorry, aktu deri hoye gelo	en-US	
+lgle	kichu lagle bolbe, ami achhi	en-US	
+loc	location pathacci	en-US	
+lol	hasi peye gelo 😄	en-US	
+lv	ami tomake onek bhalobashi	en-US	
+m	minit pore nk dei.	en-US	
+ma	mashaallah	en-US	
+mad	azaan ayater madrasay	en-US	
+mark	Market e jaitesi	en-US	
+maybe	hoyto parbo	en-US	
+mdn	md nahid	en-US	
+mgd	bhalo asi, tumi?	en-US	
+mi	minit opekkha koro	en-US	
+miss	ami tomake khub miss kortesi 😢	en-US	
+mistake	vhule gesilam ami sorry	en-US	
+mm	mesiner selai kaj kori.	en-US	
+modu	mon cay ekhn tmk rosmalair moto chete cushe kamriye  chitkar kore khai r lagai	en-US	
+moja	moja hoise onek	en-US	
+mone	mone koraya daw	en-US	
+monekori	ha, ami o eta mone kori	en-US	
+moodkh	moodta kharap	en-US	
+moodvh	mood ta ekdom set	en-US	
+mosj	mosjide achi. ber hoya call dei tmk 📞	en-US	
+mota	motamoti kaj sesh hoye ashtese	en-US	
+msg	message pathao pls	en-US	
+msgj	Message er jawab dao	en-US	
+msgp	tomar message peyechi	en-US	
+n	nasta korsi.	en-US	
+nah	na, ami parbo na	en-US	
+nam	namaz porcho?	en-US	
+net	net chole geche	en-US	
+netnai	ajke network durbol. net slow.	en-US	
+netok	net thik ache akhon	en-US	
+netp	net problem hocche 📶❌	en-US	
+nets	net slow cholche	en-US	
+next	cholo ager step e jai	en-US	
+nk	knock dicchi	en-US	
+nkber	bahire ber hoye knock dicchi tomake.	en-US	
+nkbsy	basay giye knock dicchi tomake.	en-US	
+nkd	pore message dio 📩	en-US	
+nkdd	kaj sesh kore aisa nk daw tumi.	en-US	
+nkdkn	dkn e giye knock dicchi tomake.	en-US	
+nkk	pore message deii.	en-US	
+nkkh	khaya nk daw.	en-US	
+nkn	nasta kore nk daw.	en-US	
+nkr	rate call dio parle	en-US	
+nks	sokale nk dio kotha bolbone.	en-US	
+nn	nasta korsi. tmi. ?	en-US	
+no	na, ota thik na	en-US	
+np	kono somossa nai	en-US	
+npb	kichu mone koro na please	en-US	
+num	amar number … 01995845496	en-US	
+nums	number ta save kore rekhechi	en-US	
+o	Acchha.	en-US	
+ob	Obosshoi..	en-US	
+off	sound off koira video call dio.  🤳 🤐	en-US	
+offl	Offline hobo	en-US	
+onl	Online acchi ami 🌐	en-US	
+oo	Accha thik ache..	en-US	
+ooo	Acchha bujhchi	en-US	
+ord	order nicchi customer asche...! ami kaj sesh korei tomake knock dicchi.	en-US	
+oww	Woohoo 🔥	en-US	
+p	tmr amar vhlothakay jei manushta badha dei. sei manushtaki ase.?	en-US	
+paisi	tomake peyechi, eita ei jibon er shera upohar	en-US	
+ph	phone e kotha bolbo?	en-US	
+pic	pic pathao	en-US	
+plan	ajke kono plan ache?	en-US	
+pn	pore nk dio.	en-US	
+pore	pore kotha boli kaj kori ektu. free hoi.	en-US	
+poti	washroom e asi poti kortasi.	en-US	
+profileupd	profile update korechi, check koro	en-US	
+q	ki question korte chao? ❓	en-US	
+r	Ami r aschi na	en-US	
+r8	hmm, right 🆗	en-US	
+raat	raat bhalo katuk tomar	en-US	
+ranna	Ranna sesh kore *khaya* nio.	en-US	
+ras	ami rastay, ami aschi.	en-US	
+rat	rat e ki korba?	en-US	
+rateboli	aaj raate kotha boli ei bepare	en-US	
+ratt	rat e ki khaba?	en-US	
+rdy	ami ready	en-US	
+remem	amar jonno doa koro, ami o tomake mone rakhbo	en-US	
+repo	https://github.com/ismaailnahid?tabrepositories	en-US	
+ret	return kore daw 🔄	en-US	
+rly	sotti tumi etai mone koro?	en-US	
+rna	chharo, ar bolte chai na	en-US	
+ruok	tumi bhalo aso to?	en-US	
+ruq	ruqaiya	en-US	
+s	suya asi.	en-US	
+sabr	sobor koro, allah sob dekhen	en-US	
+sad	ajke mon kharap 😔	en-US	
+sal	sanjida ashraf luna	en-US	
+savage	savage reply diso tumi	en-US	
+saw	sallallahu alaihi wasallam	en-US	
+say	something bolo 🗣️	en-US	
+see	shighroi tomar sathe dekha hobe	en-US	
+self	selfie pathao	en-US	
+ser	ami sotti bolchi, seriously!	en-US	
+sesh	eta amr sesh kotha tai text ta boro kore ekbare likhe dilam. ekbare purota sesh kore niba. .	en-US	
+sexna	sex r jiboneo korum na ami	en-US	
+shokal	shokal bhalo gelo?	en-US	
+shotti	shotti kotha, tumi onek bhalo	en-US	
+shunno	tomake chara ami shunno	en-US	
+sir	sirite uthtasi upore	en-US	
+sirr	sirite namtasi niche.	en-US	
+slp	ghumaccho?	en-US	
+smith	smithxidan@gmail.com	en-US	
+sms	amar msg paiso?	en-US	
+smy	ekhono busy? amar jonno time ache?	en-US	
+sobpari	ami tomar jonno sob kichu korte pari	en-US	
+sohoj	shohoj ekta bepar 🙂	en-US	
+somoy	Koto somoy lagbe?	en-US	
+sotti	sotti kotha bolte gele....	en-US	
+sr	shuvo ratri amar bhalobasha 🌙💤💖	en-US	
+sry	ami dukhkhoitto	en-US	
+sshot	ekta screenshot pathao 📸	en-US	
+su	shuno ekta kotha boli	en-US	
+sub	subhanallah	en-US	
+subh	subhanahu wa ta’ala	en-US	
+sunb	r jiboneo tmi shunbana ei kothata	en-US	
+sx	tmr sathe sex korte cai.? ador jotno thik thak vabhe korte cai. jotnota aro shundor kore korte cai	en-US	
+t	tumi.?	en-US	
+ta	tar somoy.	en-US	
+tala	dkn tala dei. opekkha koro amr jonno.	en-US	
+taratari	taratari cholo, deri hocche	en-US	
+taw	tawakkul alallah	en-US	
+taww	tawakkul alallah, vorsa allah er upor 🤲	en-US	
+tc	bhalo thako, shustho thako	en-US	
+tcj	take care jaan	en-US	
+tcl	luna tmi tmr kheyal raikho tmi tmr jotno nio	en-US	
+tea	ek cup cha khaw ☕	en-US	
+tend	tension diona	en-US	
+tenn	tension niona	en-US	
+thikase	thik ase, ami bujhte perechi	en-US	
+thikhobe	thik hoye jabe	en-US	
+thikna	na, ota thik na	en-US	
+think	ami tomake chhara kichu bhabi na	en-US	
+time	time pele amk bolo	en-US	
+tkw	https://takapaw.vercel.app/	en-US	
+tmib	tmi bed e asba kokhon..?	en-US	
+tmik	tmi ki koro?	en-US	
+tmikk	tmi ki khobor..? kemon acho. ?	en-US	
+tmikkk	tmi koi acho. ?	en-US	
+tmikoii	tumi koi asila. ?	en-US	
+tmin	tmi nasta korso. ?	en-US	
+tmiv	tmi vat khaiso?	en-US	
+tmkchara	Tomake chara amar keu nai 💔	en-US	
+tmkdor	shorir bhalo rakho, Tomake amar onek beshi dorkar	en-US	
+tmrkaj	tomar kaj sesh hoise..?	en-US	
+tmrkajj	tomar kaj sesh hobe kokhon..?	en-US	
+try	ekbar try kore dekho 💡	en-US	
+tt	tumio...	en-US	
+ty	thank you	en-US	
+uff	uff ki sundor 😍	en-US	
+upd	update dio news ta	en-US	
+us	united states	en-US	
+uthc	Ami uthchi,	en-US	
+utt	uthte parle nk dio 🌅	en-US	
+v	bolo..	en-US	
+vbsy	vaiar basay baniyanogor	en-US	
+vh	Vhaijan..	en-US	
+vhul	vhul hoye gese ❌	en-US	
+vid	video call 🤙 daw.	en-US	
+vidd	video call korbo?	en-US	
+voice	voice record pathao 🎤	en-US	
+vt	vhalo thaiko	en-US	
+vv	Khaite Boschi.!	en-US	
+vvv	Vat khbo.!	en-US	
+w	nk call dicchi ektu opekkha koro amar jonno	en-US	
+wa	waalikum as salaam.	en-US	
+waa	wa alaikumussalam wa rahmatullah	en-US	
+wl	you're welcome	en-US	
+wlv	welcome vai 🤝	en-US	
+world	tomar sathe sara jibon thakte chai	en-US	
+wowu	wow unbelievable 🤯	en-US	
+xn	www.xnxx.tv	en-US	
+yt	youtube.com	en-US	
+yy	Hea, thik bolcho	en-US	
+zbn	এটা বাংলায় অনুবাদ করো	en-US	
+zbug	নিচের কোডে সমস্যা কোথায়? ঠিক করো ও কারণ লেখো	en-US	
+zexp	উপরোক্ত বিষয়ের বিস্তারিত ব্যাখ্যা দাও	en-US	
+zexpp	এই কোডের ব্যাখ্যা বাংলায় দাও	en-US	
+zfadd	add koro feature ghuli	en-US	
+zfix	এই কোডের ভুল ঠিক করো ও ব্যাখ্যা দাও	en-US	
+zrespon	ei code ke sob device er jonno responsive koro shundor kore	en-US	
+zuntouch	ebar amr puro code ti sompurno kore daw untouch kore.	en-US	
